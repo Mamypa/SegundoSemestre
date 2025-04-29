@@ -33,13 +33,13 @@ const styles = {
   container: {
     width: '100%', 
     overflow: 'hidden', // Impede que o conteúdo ultrapasse os limites
-    backgroundColor: 'black', 
+    backgroundColor: 'green', 
     padding: '10px 0', // Pequeno espaçamento superior e inferior
   },
   text: {
     position: 'absolute', 
     whiteSpace: 'nowrap', 
-    color: 'white', 
+    color: 'black', 
     fontSize: '24px',
   },
 };
