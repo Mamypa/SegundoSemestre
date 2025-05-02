@@ -1,27 +1,32 @@
+:root {
+  /* controla o espaçamento vertical do letreiro */
+  --letreiro-padding: clamp(0.5rem, 2vw, 1.5rem);
+}
+
 .letreiro-container {
-    position: relative;
-    width: 100%;
-    height: 2em;           /* ajuste a altura conforme o tamanho da fonte */
-    overflow: hidden;
-    background-color: #000;
-    display: flex;
-    align-items: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+  padding: var(--letreiro-padding) 0;
+}
+
+.letreiro-text {
+  position: absolute;
+  white-space: nowrap;
+  color: #fff;
+  /* fonte que cresce/encolhe conforme a largura da tela */
+  font-size: clamp(1rem, 5vw, 2.5rem);
+  /* altura da linha igual à fonte para centralizar verticalmente */
+  line-height: 1;
+  animation: marquee var(--marquee-duration) linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
   }
-  
-  .letreiro-text {
-    position: absolute;
-    white-space: nowrap;
-    color: #fff;
-    font-size: 1.5em;
-    /* usa a variável CSS definida em style do componente para controlar a duração */
-    animation: marquee var(--marquee-duration) linear infinite;
+  to {
+    transform: translateX(-100%);
   }
-  
-  @keyframes marquee {
-    from {
-      transform: translateX(100%);   /* começa fora da tela à direita */
-    }
-    to {
-      transform: translateX(-100%);  /* termina fora da tela à esquerda */
-    }
-  }
+}

@@ -31,7 +31,7 @@ export default function Clock({ format24 = true }) {
   }, [format24]);
 
   return (
-    <div className="Relogio">
+    <div className="relogio">
       {time}
     </div>
   );
