@@ -3,15 +3,14 @@ import './Letreiro.css';
 
 export default function Letreiro({
   text = '🚀 Promoções incríveis chegando!',
-  speed = 0.5,      // velocidade em pixels por milissegundo
-  gap = 50          // espaço em pixels entre repetições
+  speed = 0.5 // velocidade em pixels por milissegundo
 }) {
   const containerRef = useRef(null);
-  const textRef      = useRef(null);
+  const textRef = useRef(null);
 
   const [containerWidth, setContainerWidth] = useState(0);
-  const [textWidth, setTextWidth]           = useState(0);
-  const [offset, setOffset]                 = useState(0);
+  const [textWidth, setTextWidth] = useState(0);
+  const [offset, setOffset] = useState(0);
 
   // Captura larguras no load e resize
   useEffect(() => {
@@ -30,7 +29,7 @@ export default function Letreiro({
     setOffset(containerWidth);
   }, [containerWidth, text]);
 
-  // requestAnimationFrame para mover o texto
+  // requestAnimationFrame para mover o texto com gap igual à largura da tela
   useEffect(() => {
     let frameId;
     let lastTime;
@@ -40,8 +39,8 @@ export default function Letreiro({
         const delta = now - lastTime;
         setOffset(prev => {
           const next = prev - speed * delta;
-          // quando todo o texto + gap sair, reinicia
-          if (next < -textWidth - gap) {
+          // gap igual à largura do container
+          if (next < -textWidth - containerWidth) {
             return containerWidth;
           }
           return next;
@@ -53,13 +52,10 @@ export default function Letreiro({
 
     frameId = requestAnimationFrame(step);
     return () => cancelAnimationFrame(frameId);
-  }, [containerWidth, textWidth, speed, gap]);
+  }, [containerWidth, textWidth, speed]);
 
   return (
-    <div
-      ref={containerRef}
-      className="letreiro-container"
-    >
+    <div ref={containerRef} className="letreiro-container">
       <div
         ref={textRef}
         className="letreiro-text"
