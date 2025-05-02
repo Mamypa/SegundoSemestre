@@ -1,18 +1,19 @@
 .letreiro-container {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   overflow: hidden;
   background: #000;
   padding: 0.5rem 0;
+  z-index: 1000; /* Para ficar acima do relógio */
 }
 
 .letreiro-text {
   position: absolute;
+  top: 0;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
   white-space: nowrap;
-  display: inline-block;
   color: #fff;
   font-size: clamp(1rem, 5vw, 2rem);
   line-height: 1;
