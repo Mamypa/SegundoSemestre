@@ -7,7 +7,10 @@ export default function Atv01() {
         <>
             <h1>Atividade 1</h1>
             <Relogio />
-            <Letreiro />
+            <Letreiro
+                text="Bem-vindo ao meu site! 🚀"
+                duration={10}
+            />
             <Link to='/'>Voltar</Link>
         </>
     );

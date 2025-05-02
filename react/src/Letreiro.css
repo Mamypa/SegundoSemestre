@@ -1,0 +1,27 @@
+.letreiro-container {
+    position: relative;
+    width: 100%;
+    height: 2em;           /* ajuste a altura conforme o tamanho da fonte */
+    overflow: hidden;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+  }
+  
+  .letreiro-text {
+    position: absolute;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 1.5em;
+    /* usa a variável CSS definida em style do componente para controlar a duração */
+    animation: marquee var(--marquee-duration) linear infinite;
+  }
+  
+  @keyframes marquee {
+    from {
+      transform: translateX(100%);   /* começa fora da tela à direita */
+    }
+    to {
+      transform: translateX(-100%);  /* termina fora da tela à esquerda */
+    }
+  }

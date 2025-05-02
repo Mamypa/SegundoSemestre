@@ -1,45 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-export default function Letreiro() {
-  const [position, setPosition] = useState(100); // Posição inicial (fora da tela à direita)
-  const text = "Meu Letreiro"; // Texto a ser exibido
-
-  useEffect(() => {
-    const moveText = setInterval(() => {
-      setPosition(prevPosition => {
-        // Se o texto saiu completamente da tela, reiniciamos a posição
-        if (prevPosition < -100) {
-          return 100;
-        }
-        // Move o texto para a esquerda
-        return prevPosition - 1;
-      });
-    }, 10); // A cada 10ms, o texto se move 1 pixel
-
-    // Limpeza do intervalo ao desmontar o componente
-    return () => clearInterval(moveText);
-  }, []);
-
-  return (
-    <div style={styles.container}>
-      <h2 style={{ ...styles.text, left: `${position}%` }}>
-        {text}
-      </h2>
-    </div>
-  );
-}
-
-const styles = {
-  container: {
-    width: '100%', 
-    overflow: 'hidden', // Impede que o conteúdo ultrapasse os limites
-    backgroundColor: 'green', 
-    padding: '10px 0', // Pequeno espaçamento superior e inferior
-  },
-  text: {
-    position: 'absolute', 
-    whiteSpace: 'nowrap', 
-    color: 'black', 
-    fontSize: '24px',
-  },
-};
+export default function Letreiro({
+    text = 'Bem-vindo ao meu site! 🚀',
+    duration = 10 
+  }) {
+    return (
+      <div
+        className="letreiro-container"
+        style={{ '--marquee-duration': `${duration}s` }}
+      >
+        <span className="letreiro-text">{text}</span>
+      </div>
+    );
+  }
+  
