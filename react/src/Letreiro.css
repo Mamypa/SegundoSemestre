@@ -8,10 +8,12 @@
 
 .letreiro-text {
   position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   white-space: nowrap;
   display: inline-block;
   color: #fff;
   font-size: clamp(1rem, 5vw, 2rem);
   line-height: 1;
-  /* A animação em JS controla o transform, então não declaramos @keyframes aqui */
 }
