@@ -1,32 +1,17 @@
-:root {
-  /* controla o espaçamento vertical do letreiro */
-  --letreiro-padding: clamp(0.5rem, 2vw, 1.5rem);
-}
-
 .letreiro-container {
   position: relative;
   width: 100%;
   overflow: hidden;
-  background-color: #000;
-  padding: var(--letreiro-padding) 0;
+  background: #000;
+  padding: 0.5rem 0;
 }
 
 .letreiro-text {
   position: absolute;
   white-space: nowrap;
+  display: inline-block;
   color: #fff;
-  /* fonte que cresce/encolhe conforme a largura da tela */
-  font-size: clamp(1rem, 5vw, 2.5rem);
-  /* altura da linha igual à fonte para centralizar verticalmente */
+  font-size: clamp(1rem, 5vw, 2rem);
   line-height: 1;
-  animation: marquee var(--marquee-duration) linear infinite;
-}
-
-@keyframes marquee {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+  /* A animação em JS controla o transform, então não declaramos @keyframes aqui */
 }
