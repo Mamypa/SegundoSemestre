@@ -41,7 +41,7 @@ export default function Letreiro({
         setOffset(prev => {
           const next = prev - speed * delta;
           // gap igual à largura do container
-          if (next < -textWidth + containerWidth + 4) {
+          if (next < -textWidth) {
             return containerWidth;
           }
           return next;
