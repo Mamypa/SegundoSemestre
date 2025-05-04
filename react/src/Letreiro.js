@@ -3,7 +3,7 @@ import './Letreiro.css';
 
 export default function Letreiro({
   text = '🚀 Promoções incríveis chegando!',
-  speed = 0.5 // velocidade em pixels por milissegundo
+  speed = 0.2 // velocidade em pixels por milissegundo
 }) {
   const containerRef = useRef(null);
   const textRef = useRef(null);
