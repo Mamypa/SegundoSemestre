@@ -2,14 +2,14 @@
   width: 500px;
   overflow: hidden;
   background: #000;
-  padding: 0.5rem 0;
+  padding: 10px 20px;
 }
 
 .letreiro-text {
   display: inline-block;
   white-space: nowrap;
   color: #fff;
-  font-size: clamp(1rem, 5vw, 2rem);
+  font-size: clamp(1rem, 10vw, 2rem);
   line-height: 1;
   /* O deslocamento horizontal é aplicado pelo estilo inline no componente */
 }
