@@ -1,5 +1,6 @@
 .letreiro-container {
-  width: 500px;
+  width: 50vw;
+  height: 40vh;
   overflow: hidden;
   background: #000;
   padding: 10px 20px;
@@ -9,7 +10,7 @@
   display: inline-block;
   white-space: nowrap;
   color: #fff;
-  font-size: clamp(1rem, 10vw, 2rem);
+  font-size: clamp(1rem, 30vw, 2rem);
   line-height: 1;
   /* O deslocamento horizontal é aplicado pelo estilo inline no componente */
 }
