@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.contadores {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}

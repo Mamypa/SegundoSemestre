@@ -1,0 +1,16 @@
+.total {
+    text-align: center;
+    padding: 10px;
+}
+
+.total .numero {
+    font-size: 32px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.reset {
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
