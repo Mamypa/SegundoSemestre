@@ -1,7 +1,7 @@
 .relogio {
     font-family: 'Courier New', Courier, monospace;
     color: #333;
-    font-size: clamp(1rem, 50vw, 3rem);
+    font-size: clamp(1rem, 5rem, 5rem);
     background-color: #f0f0f0;
     padding: 10px 20px;
     border-radius: 5px;

@@ -9,7 +9,7 @@
   display: inline-block;
   white-space: nowrap;
   color: #fff;
-  font-size: clamp(1rem, 50vw, 2rem);
+  font-size: clamp(1rem, 5rem, 5rem);
   line-height: 1;
   /* O deslocamento horizontal é aplicado pelo estilo inline no componente */
 }
