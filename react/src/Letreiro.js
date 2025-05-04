@@ -15,7 +15,8 @@ export default function Letreiro({
   // Captura larguras no load e resize
   useEffect(() => {
     function updateSizes() {
-      if (!containerRef.current || !textRef.current) return;
+      if (!containerRef.current || !textRef.current) 
+        return;
       setContainerWidth(containerRef.current.clientWidth);
       setTextWidth(textRef.current.clientWidth);
     }
@@ -40,7 +41,7 @@ export default function Letreiro({
         setOffset(prev => {
           const next = prev - speed * delta;
           // gap igual à largura do container
-          if (next < -textWidth - containerWidth) {
+          if (next < -textWidth) {
             return containerWidth;
           }
           return next;
