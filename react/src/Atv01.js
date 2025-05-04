@@ -10,8 +10,8 @@ export default function Atv01() {
 
     useEffect(() => {
         const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-        const offsetMin = new Date().getTimezoneOffset(); // ex: -180
-        const offsetHoras = -offsetMin / 60; // -180 → 3
+        const offsetMin = new Date().getTimezoneOffset();
+        const offsetHoras = -offsetMin / 60;
         const offsetFormatado = `UTC${offsetHoras >= 0 ? '+' : ''}${offsetHoras}`;
         setUtcOffset(offsetFormatado);
         setTimeZone(userTimeZone);
