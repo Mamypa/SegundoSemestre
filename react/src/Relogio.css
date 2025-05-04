@@ -1,13 +1,12 @@
 .relogio {
     font-family: 'Courier New', Courier, monospace;
     color: #333;
-    font-size: clamp(1rem, 30vw, 3rem);
+    font-size: clamp(1rem, 50vw, 3rem);
     background-color: #f0f0f0;
     padding: 10px 20px;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50vw;
-    height: 40vh;
+    width: 500px;
 }
