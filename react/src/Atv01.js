@@ -1,13 +1,16 @@
-import Relogio from './Relogio';
+import { Link } from 'react-router-dom';
 import Letreiro from './Letreiro';
-import {Link} from "react-router-dom";
+import Relogio from './Relogio';
+import './Atv01.css';
 
 export default function Atv01() {
     return (
-        <>
+        <div className="container">
             <Letreiro text="Relógio Digital" duration={5} />
             <Relogio />
-            <Link to='/'>Voltar</Link>
-        </>
+            <div className="botao-voltar-container">
+                <Link to='/' className="botao-voltar">Voltar</Link>
+            </div>
+        </div>
     );
 }
