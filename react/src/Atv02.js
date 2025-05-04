@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Contador from './components/Contador';
-import Total from './components/Total';
+import Contador from './Contador';
+import Total from './Total';
 import './Atv02.css';
 
 export default function Atv02() {
