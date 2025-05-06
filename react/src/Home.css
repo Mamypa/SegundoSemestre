@@ -10,14 +10,18 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  /* Centraliza verticalmente em cima */
+    padding-top: 40px;  /* Espaçamento para não ficar grudado no topo */
 }
 
 /* Container principal */
 div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
 }
 
 /* Estilos do nav */
@@ -26,8 +30,6 @@ nav {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 250px;
 }
 
 /* Estilo para o título h1 */
@@ -37,24 +39,28 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Lista de links */
+/* Estilo para a lista de links (agora com flexbox horizontal) */
 .link-list {
+    display: flex;
+    justify-content: center;  /* Alinha os itens horizontalmente no centro */
+    gap: 15px;  /* Espaço entre os itens */
     list-style: none;
 }
 
 /* Estilos para os itens de lista */
 .link-list li {
-    margin: 10px 0;
+    display: inline-block;
 }
 
-/* Estilos para os links */
+/* Estilos para os links, agora como botões */
 .link-list a {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
-    padding: 10px 15px;
+    padding: 15px 30px;
     border-radius: 5px;
     background-color: #5dba62; /* Cor de fundo verde mais claro */
+    display: inline-block;
     transition: background-color 0.3s ease;
 }
 
@@ -75,5 +81,6 @@ h1 {
 
     .link-list a {
         font-size: 16px;
+        padding: 10px 20px; /* Ajuste de tamanho dos botões */
     }
 }
