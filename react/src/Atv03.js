@@ -6,7 +6,7 @@ export default function Atv03() {
     return ( 
         <>
             <h1>Atividade 03</h1>
-            <div className="container">
+            <div>
                 <Gallery />
             </div>
             <Link to='/' className="botao-voltar">Voltar</Link>
