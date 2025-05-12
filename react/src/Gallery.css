@@ -1,0 +1,59 @@
+/* Container geral da galeria */
+.gallery-container {
+    text-align: center;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* Título da galeria */
+  .gallery-container h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  /* Grade responsiva dos perfis */
+  .gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  /* Estilo do cartão de perfil */
+  .profile-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 1rem;
+    transition: transform 0.2s ease;
+  }
+  
+  .profile-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Imagem do perfil */
+  .profile-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* Nome */
+  .profile-card h2 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #222;
+  }
+  
+  /* Descrição */
+  .profile-card p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+  

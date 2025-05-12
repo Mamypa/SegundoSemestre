@@ -1,3 +1,5 @@
+import "./Gallery.css";
+
 function Profile(){
     return (
         <div className="profile-card">
