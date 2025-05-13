@@ -9,7 +9,6 @@ const person = {
             borderRadius: "50%"
         },
         ul: {
-            listStyleType: "none",
             padding: 0,
             listStylePosition: "inside",
         },
