@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 import Gallery from "./Gallery";
 import TodoList from "./TodoList";
+import Profile from "./Profile";
 
 const styleDiv = {
     display: "flex",
@@ -16,6 +17,7 @@ export default function Atv03() {
             <div style={styleDiv}>
                 <Gallery />
                 <TodoList />
+                <Profile />
             </div>
             <Link to='/' className="botao-voltar">Voltar</Link>
         </>
