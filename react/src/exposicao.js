@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { sculptureList } from "data.js";
+import { sculptureList } from "./data.js";
 
 export default function Exposicao() {
     const [index, setIndex] = useState(0);
