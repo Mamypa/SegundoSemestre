@@ -1,0 +1,38 @@
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px auto;
+}
+
+/* Estilo para os botões dentro da barra de ferramentas */
+.toolbar button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo de hover para os botões */
+.toolbar button:hover {
+    background-color: #45a049;
+}
+
+/* Efeito de foco no botão (quando o botão está ativo) */
+.toolbar button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(72, 162, 32, 0.8);
+}
+
+/* Adiciona espaçamento entre os botões */
+.toolbar button + button {
+    margin-left: 10px;
+}

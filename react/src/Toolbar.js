@@ -1,3 +1,4 @@
+import './Toolbar.css';
 function Button({ onClick, children }) {
     return (
         <button onClick={e => {
