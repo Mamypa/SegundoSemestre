@@ -32,8 +32,16 @@
     margin-bottom: 15px;
 }
 
-/* Botão de "Próximo" */
-.exposicao button {
+/* Estilo do container para os botões */
+.botoes {
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    gap: 15px; /* Espaçamento entre os botões */
+    margin-top: 20px;
+}
+
+/* Estilo para os botões dentro do container */
+.botoes button {
     background-color: #4CAF50;
     color: white;
     font-size: 16px;
@@ -42,19 +50,11 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin: 10px 0;
 }
 
-/* Hover effect para os botões */
-.exposicao button:hover {
+/* Efeito hover para os botões */
+.botoes button:hover {
     background-color: #45a049;
-}
-
-/* Detalhes da escultura (quando mostrado) */
-.exposicao p {
-    font-size: 16px;
-    color: #444;
-    margin-top: 10px;
 }
 
 /* Estilo para a imagem */
@@ -64,4 +64,11 @@
     width: 100%;
     max-width: 500px;
     height: auto;
+}
+
+/* Detalhes da escultura (quando mostrado) */
+.exposicao p {
+    font-size: 16px;
+    color: #444;
+    margin-top: 10px;
 }

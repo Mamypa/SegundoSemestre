@@ -10,6 +10,10 @@ export default function Exposicao() {
         setIndex(index + 1);
     }
 
+    function handleBackClick() {
+        setIndex(index - 1);
+    }
+
     function handleMoreClick() {
         setShowMore(!showMore);
     }
@@ -23,9 +27,14 @@ export default function Exposicao() {
                 <i>{sculpture.marca}<br /></i>
                 <i>{sculpture.fabricante}</i>
             </h2>
+            <div className="botoes">
             <button onClick={handleNextClick}>
                 Próximo
             </button>
+            <button onClick={handleBackClick}>
+                Voltar
+            </button>
+            </div>
             <h3>
                 ({index + 1} de {sculptureList.length})
             </h3>
