@@ -15,14 +15,14 @@ export default function Exposicao() {
     let sculpture = sculptureList[index];
     return (
         <>
+            <h2>
+                <i>{sculpture.name}</i>
+                <i>marca:{sculpture.marca}</i>
+                <i>fabricante:{sculpture.fabricante}</i>
+            </h2>
             <button onClick={handleNextClick}>
                 Proximo
             </button>
-            <h2>
-                <i>{sculpture.name}</i>
-                marca:{sculpture.marca}
-                fabricante:{sculpture.fabricante}
-            </h2>
             <h3>
                 ({index + 1} of {sculptureList.length})
             </h3>
