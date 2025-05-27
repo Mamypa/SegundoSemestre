@@ -16,9 +16,9 @@ export default function Exposicao() {
     return (
         <>
             <h2>
-                <i>{sculpture.name}</i>
-                <i>marca:{sculpture.marca}</i>
-                <i>fabricante:{sculpture.fabricante}</i>
+                <i>{sculpture.name}<br/></i>
+                <i>{sculpture.marca}<br/></i>
+                <i>{sculpture.fabricante}</i>
             </h2>
             <button onClick={handleNextClick}>
                 Proximo
