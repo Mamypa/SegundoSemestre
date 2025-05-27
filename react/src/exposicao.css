@@ -1,0 +1,67 @@
+/* exposicao.css */
+
+/* Estilo geral da exposição */
+.exposicao {
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo para o título da escultura */
+.exposicao h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estilo para as informações adicionais (marca e fabricante) */
+.exposicao i {
+    font-size: 18px;
+    color: #777;
+}
+
+/* Estilo para o subtítulo (índice da escultura) */
+.exposicao h3 {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Botão de "Próximo" */
+.exposicao button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px 0;
+}
+
+/* Hover effect para os botões */
+.exposicao button:hover {
+    background-color: #45a049;
+}
+
+/* Detalhes da escultura (quando mostrado) */
+.exposicao p {
+    font-size: 16px;
+    color: #444;
+    margin-top: 10px;
+}
+
+/* Estilo para a imagem */
+.exposicao img {
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
