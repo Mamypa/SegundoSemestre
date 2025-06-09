@@ -28,11 +28,11 @@ export default function Exposicao() {
                 <i>{sculpture.fabricante}</i>
             </h2>
             <div className="botoes">
-            <button onClick={handleNextClick}>
-                Próximo
-            </button>
             <button onClick={handleBackClick}>
                 Voltar
+            </button>
+            <button onClick={handleNextClick}>
+                Próximo
             </button>
             </div>
             <h3>
