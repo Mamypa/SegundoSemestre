@@ -13,7 +13,7 @@ export default function MovingDot(){
             });
         }}
         style={{
-            position:relative,
+            position:'relative',
             width:'100vw',
             height: '100vh'
         }}>
