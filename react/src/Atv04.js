@@ -3,7 +3,7 @@ import Exposicao from "./exposicao";
 import Counter from "./CounterSL11";
 import Form from "./FormSL11";
 import MovingDot from "./MovingDot";
-import "Atv04.css";
+import "./Atv04.css";
 import {Link} from "react-router-dom";
 
 
